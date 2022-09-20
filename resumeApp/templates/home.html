@@ -1,6 +1,21 @@
-{% extends 'resumeApp/base.html' %}
+{% extends 'partials/base.html' %}
 {% load static %}
 
 {% block content %}
-    <h2>hello</h2>
+    <section style="background-color: #e1eaf8; padding: 10px;">
+        <div class="container " style="margin-top:100px">
+            <div class="row">
+                <div class="col-md-8 who center">
+                    <p>Hi, I am Saber, a Backend Developer</p>
+                    <button class="favorite styled" type="button">
+                        Contact Me
+                    </button>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'imgs/myimage.jpeg' %}" class="myimage">
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}

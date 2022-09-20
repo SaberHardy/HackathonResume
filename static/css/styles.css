@@ -1,0 +1,52 @@
+body {
+    background-color: #000000;
+}
+
+p, h3 {
+    color: white;
+}
+
+.ul-items a {
+    color: white;
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    font-size: 25px;
+}
+
+.MyLogo {
+    color: white;
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    font-size: 25px;
+}
+
+.myimage {
+    border-radius: 6%;
+    height: 40rem;
+}
+
+.who {
+    background-color: #e5f7fc;
+    text-align: center;
+    border-radius: 3%;
+}
+
+.who p {
+    font-size: 100px;
+    font-family: Serif;
+    color: #1a1e21;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #070707;
+    border-radius: 10%;
+    background-color: rgb(255, 255, 255);
+}
+
+.styled:hover {
+    background-color: rgb(255, 250, 178);
+}
+
