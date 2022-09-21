@@ -2,8 +2,12 @@ body {
     background-color: #212325;
 }
 
-p, h1, h2, h3, h4, h5, ul, li {
+p, h2, h3, h4, h5, ul, li {
     color: #c9c8c8;
+}
+
+h1 {
+    color: aliceblue;
 }
 
 .ul-items a {
@@ -52,6 +56,6 @@ p, h1, h2, h3, h4, h5, ul, li {
 
 p {
     text-align: justify;
-    /*text-justify: inter-word;*/
+    text-justify: inter-word;
     line-height: 2rem;
 }
