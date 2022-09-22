@@ -200,37 +200,15 @@
             </div>
         </div>
 
-        {# <div class="progress-bar"/> #}
+        {% include 'contact.html' %}
 
-        {#        <div class="progress-bar"/>#}
-        <div class="container-div" id="contact-me">
-            <h1 class="text-center">Contact Me</h1>
-
-            {#        <div class="row justify-content-center">#}
-            {#            <div class="col-lg-10 col-md-10">#}
-            {#                #}
-            {#            </div>#}
-            {#        </div>#}
-            <form action="">
-                <label for="fname" class="mylabel">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name...">
-
-                <label for="lname" class="mylabel">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-
-                <label for="lname" class="mylabel">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write your message here..." style="height: 200px;">
-                </textarea>
-                <input type="submit" value="Submit">
-            </form>
-            <button class="back-to-top hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
-                     stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12">
-                    </path>
-                </svg>
-            </button>
-        </div>
+        <button class="back-to-top hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12">
+                </path>
+            </svg>
+        </button>
     </div>
 {% endblock %}
