@@ -3,7 +3,7 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
 from resumeApp.forms import ContactForm
-from resumeApp.models import WhoAmI, OnlineCourses
+from resumeApp.models import WhoAmI, OnlineCourses, ProfessionalExperience
 
 
 def home(request):
@@ -50,6 +50,14 @@ def get_online_courses(request):
     online_courses = OnlineCourses.objects.all()
     context = {
         'online_courses': online_courses,
+    }
+    return context
+
+
+def get_professional_experience(request):
+    experiences = ProfessionalExperience.objects.all()
+    context = {
+        'experiences': experiences,
     }
     return context
 

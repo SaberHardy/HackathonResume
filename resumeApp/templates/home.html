@@ -61,7 +61,8 @@
             </div>
             <div class="col-md-8 mt-2">
                 {% for online in online_courses %}
-                    <li>{{ online.title }} - {{ online.get_from }} - {{ online.where }} - {{ online.when|date:"Y" }}</li>
+                    <li>{{ online.title }} - {{ online.get_from }} - {{ online.where }}
+                        - {{ online.when|date:"Y" }}</li>
                 {% endfor %}
             </div>
         </div>
@@ -75,14 +76,16 @@
                 <h1>Professional Experience</h1>
                 {#                <p>This description is for official job</p>#}
             </div>
-            <div class="col-md-8 mt-2 myname">
-                <h5 style="color: white">Official Blog, Freelancer
-                    <span class="float-right where">2021–Present  Saint Petersburg, Russia</span>
-                </h5>
-                <p>It is an online journal or informational website displaying information in reverse chronological
-                    order, with the latest posts appearing first, at the top. It is a platform where a writer or a group
-                    of writers shares their views on an individual subject.</p>
-            </div>
+        <div class="col-md-8 mt-2 myname">
+            {% for exp in experiences %}
+
+                    <h5 style="color: white">{{ exp.title }}, {{ exp.category }}
+                        <span class="float-right where">{{ exp.when|date:"Y" }} - {{ exp.where }}</span>
+                    </h5>
+                    <p>{{ exp.description }}</p>
+            {% endfor %}
+                </div>
+
         </div>
         <div class="skills-and-frameworks">
             <div class="text-center">

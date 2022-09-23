@@ -52,6 +52,7 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
                 "resumeApp.views.get_infos",
                 "resumeApp.views.get_online_courses",
+                "resumeApp.views.get_professional_experience",
             ],
         },
     },
