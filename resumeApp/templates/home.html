@@ -34,18 +34,13 @@
             <div class="col-md-4">
                 <h1>Who am I ?</h1>
             </div>
-            <div class="col-md-8 myname" id="about-me">
-                <p class="mt-2">Bounehas Saber is from Algeria. I got my bachelor degree from University of Mohamed
-                    Khidher of
-                    Biskra 2016/2017. After that i came to Russia to finish my master degree. Right now i'm with 3
-                    plus years experience of python programming. I got one year of experience with small company in
-                    the same university i'm studying right now.( Information Technologies, Mechanics and Optics
-                    -Saint Petersburg State University; Russia- ITMO). Always willing to learn new skills. I am
-                    friendly, helpful and polite, have a good sense of humor. I am able to work independently in
-                    busy environments and also within a team setting. My favorite part of work is team work better
-                    than individual work. I am outgoing and tactful, and able to listen effectively when solving
-                    problems. I love anything related to Python.</p>
-            </div>
+
+                <div class="col-md-8 myname" id="about-me">
+                    {% for about in about_me %}
+                    <p>{{ about.about_me }}</p>
+                    {% endfor %}
+                </div>
+
         </div>
         <div class="row my-5">
             <div class="col-md-4">
@@ -78,7 +73,7 @@
             <div class="col-md-4">
 
                 <h1>Professional Experience</h1>
-{#                <p>This description is for official job</p>#}
+                {#                <p>This description is for official job</p>#}
             </div>
             <div class="col-md-8 mt-2 myname">
                 <h5 style="color: white">Official Blog, Freelancer

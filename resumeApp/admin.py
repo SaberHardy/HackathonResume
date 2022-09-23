@@ -1,3 +1,4 @@
 from django.contrib import admin
+from resumeApp.models import WhoAmI
 
-# Register your models here.
+admin.site.register(WhoAmI)

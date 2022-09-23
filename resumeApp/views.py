@@ -3,6 +3,7 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
 from resumeApp.forms import ContactForm
+from resumeApp.models import WhoAmI
 
 
 def home(request):
@@ -36,6 +37,13 @@ def home(request):
     }
     return render(request, 'home.html', context)
 
+
+def get_infos(request):
+    about_me = WhoAmI.objects.all()
+    context = {
+        'about_me': about_me,
+    }
+    return context
 
 """
  # TODO: 
