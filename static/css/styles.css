@@ -183,3 +183,7 @@ input[type=submit]:hover {
 .mylabel {
     font-family: Zapfino;
 }
+
+a:link, a:focus, a:visited  {
+    text-decoration: none;
+}
