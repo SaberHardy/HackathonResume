@@ -35,11 +35,11 @@
                 <h1>Who am I ?</h1>
             </div>
 
-                <div class="col-md-8 myname" id="about-me">
-                    {% for about in about_me %}
+            <div class="col-md-8 myname" id="about-me">
+                {% for about in about_me %}
                     <p>{{ about.about_me }}</p>
-                    {% endfor %}
-                </div>
+                {% endfor %}
+            </div>
 
         </div>
         <div class="row my-5">
@@ -60,9 +60,9 @@
                 <h1>Online courses</h1>
             </div>
             <div class="col-md-8 mt-2">
-                <li>Machine Learning - Stanford University - Coursera 2020</li>
-                <li>Deep Learning - Stanford University - Coursera 2020</li>
-                <li>UX/UI from Google(in progress)</li>
+                {% for online in online_courses %}
+                    <li>{{ online.title }} - {{ online.get_from }} - {{ online.where }} - {{ online.when|date:"Y" }}</li>
+                {% endfor %}
             </div>
         </div>
 
