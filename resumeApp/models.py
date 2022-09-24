@@ -40,3 +40,11 @@ class ProfessionalExperience(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class SkillsFramework(models.Model):
+    name = models.CharField(max_length=100)
+    percent = models.IntegerField(default=10)
+
+    def __str__(self):
+        return self.name

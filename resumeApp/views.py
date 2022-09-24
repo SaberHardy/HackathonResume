@@ -3,7 +3,7 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
 from resumeApp.forms import ContactForm
-from resumeApp.models import WhoAmI, OnlineCourses, ProfessionalExperience
+from resumeApp.models import WhoAmI, OnlineCourses, ProfessionalExperience, SkillsFramework
 
 
 def home(request):
@@ -60,6 +60,15 @@ def get_professional_experience(request):
         'experiences': experiences,
     }
     return context
+
+
+def skills_frameworks(request):
+    skills = SkillsFramework.objects.all()
+    context = {
+        'skills': skills,
+    }
+    return context
+
 
 """
  # TODO: 
